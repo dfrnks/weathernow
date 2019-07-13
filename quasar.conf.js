@@ -6,6 +6,7 @@ module.exports = function (ctx) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     boot: [
+      'axios'
     ],
 
     css: [
@@ -15,7 +16,7 @@ module.exports = function (ctx) {
     extras: [
       // 'ionicons-v4',
       // 'mdi-v3',
-      // 'fontawesome-v5',
+      'fontawesome-v5',
       // 'eva-icons',
       // 'themify',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
@@ -43,7 +44,8 @@ module.exports = function (ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QAjaxBar'
       ],
 
       directives: [
@@ -88,16 +90,16 @@ module.exports = function (ctx) {
     animations: [],
 
     ssr: {
-      pwa: false
+      pwa: true
     },
 
     pwa: {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'WeatherNow',
-        // short_name: 'WeatherNow',
-        // description: 'A PWA Interface for the WeatherNow',
+        name: 'WeatherNow',
+        short_name: 'WeatherNow',
+        description: 'A PWA Interface for the WeatherNow',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
