@@ -34,7 +34,6 @@
 <style lang="stylus">
   .q-header
     background #00aaaa
-    z-index 0
   .q-page
     background #00aaaa
     color white
