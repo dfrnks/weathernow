@@ -103,7 +103,7 @@ module.exports = function (ctx) {
         description: 'A PWA Interface for the WeatherNow',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#ffffff',
+        background_color: '#00aaaa',
         theme_color: '#00aaaa',
         icons: [
           {

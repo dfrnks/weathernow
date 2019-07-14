@@ -10,6 +10,7 @@
     "dev": "quasar dev -m pwa",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
+    "deploy": "quasar build -m pwa && firebase deploy",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0"
   },
