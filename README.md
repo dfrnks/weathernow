@@ -1,3 +1,5 @@
-# Quasar App
+# Web App to WeatherNow
 
-> WIP
+https://weathernow-ipy.web.app/#/
+
+https://comercial.eleventickets.com/Weather/WnPrevisaoTempoClass/home
