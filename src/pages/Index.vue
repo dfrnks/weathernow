@@ -5,26 +5,38 @@
       <div class="tempo-agora row">
         <div class="col temperatura"><h3>{{tempo.result.temperatura}}</h3> °c</div>
         <div class="col chovendo">
-          <span v-if="tempo.result.rain_fall > 0">Choveu <q-icon name="fas fa-cloud-sun-rain"></q-icon></span>
+          <span v-if="tempo.result.rain_fall > 0">Choveu {{tempo.result.rain_fall}} mm<q-icon name="fas fa-cloud-sun-rain"></q-icon></span>
           <span v-if="tempo.result.rain_fall <= 0">Não choveu <q-icon name="fas fa-cloud-sun"></q-icon></span>
         </div>
       </div>
       <div class="previsao" v-if="previsao.result">
         <h4>Previsão</h4>
-        <div class="hoje">
-          <span>Hoje: </span>
-          <span v-if="previsao.result.previsao_dia.chuva">Chuva {{previsao.result.previsao_dia.precipitacao}} mm</span>
-          <span v-if="!previsao.result.previsao_dia.chuva">Sem chuva</span>
+        <div class="row">
+          <div class="col">
+            <span>Hoje </span>
+          </div>
+          <div class="col">
+            <span v-if="previsao.result.previsao_dia.chuva">Chuva {{previsao.result.previsao_dia.precipitacao}} mm</span>
+            <span v-if="!previsao.result.previsao_dia.chuva">Sem chuva</span>
+          </div>
         </div>
-        <div class="turno">
-          <span>{{previsao.result.dt_log_turno}} hrs: </span>
-          <span v-if="previsao.result.previsao_turno.chuva">Chuva {{previsao.result.previsao_turno.precipitacao}} mm</span>
-          <span v-if="!previsao.result.previsao_turno.chuva">Sem chuva</span>
+        <div class="row">
+          <div class="col">
+            <span>{{previsao.result.dt_log_turno}} hrs </span>
+          </div>
+          <div class="col">
+            <span v-if="previsao.result.previsao_turno.chuva">Chuva {{previsao.result.previsao_turno.precipitacao}} mm</span>
+            <span v-if="!previsao.result.previsao_turno.chuva">Sem chuva</span>
+          </div>
         </div>
-        <div class="hora">
-          <span>{{previsao.result.dt_log_hora}} as {{parseInt(previsao.result.dt_log_hora) + 1}} hrs: </span>
-          <span v-if="previsao.result.previsao_hora.chuva">Chuva {{previsao.result.previsao_hora.precipitacao}} mm</span>
-          <span v-if="!previsao.result.previsao_hora.chuva">Sem chuva</span>
+        <div class="row">
+          <div class="col">
+            <span>{{previsao.result.dt_log_hora}} as {{parseInt(previsao.result.dt_log_hora) + 1}} hrs </span>
+          </div>
+          <div class="col">
+            <span v-if="previsao.result.previsao_hora.chuva">Chuva {{previsao.result.previsao_hora.precipitacao}} mm</span>
+            <span v-if="!previsao.result.previsao_hora.chuva">Sem chuva</span>
+          </div>
         </div>
       </div>
     </div>
