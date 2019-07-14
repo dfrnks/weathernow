@@ -5,8 +5,8 @@
       <div class="tempo-agora row">
         <div class="col temperatura"><h3>{{tempo.result.temperatura}}</h3> °c</div>
         <div class="col chovendo">
-          <span v-if="tempo.result.rain_fall > 0">Chovendo <q-icon name="fas fa-cloud-sun-rain"></q-icon></span>
-          <span v-if="tempo.result.rain_fall <= 0">Não está chovendo <q-icon name="fas fa-cloud-sun"></q-icon></span>
+          <span v-if="tempo.result.rain_fall > 0">Choveu <q-icon name="fas fa-cloud-sun-rain"></q-icon></span>
+          <span v-if="tempo.result.rain_fall <= 0">Não choveu <q-icon name="fas fa-cloud-sun"></q-icon></span>
         </div>
       </div>
       <div class="previsao" v-if="previsao.result">

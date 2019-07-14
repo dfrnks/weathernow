@@ -4,7 +4,7 @@
 module.exports = function (ctx) {
   return {
     // app boot file (/src/boot)
-    // --> boot files are part of "main.js"
+    // --> boot files are part of 'main.js'
     boot: [
       'axios'
     ],
@@ -104,21 +104,36 @@ module.exports = function (ctx) {
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
-        theme_color: '#027be3',
+        theme_color: '#00aaaa',
         icons: [
           {
-            'src': 'statics/icons/icon-128x128.png',
+            'src': 'statics/icons/icon-72x72.png',
+            'sizes': '72x72',
+            'type': 'image/png'
+          },
+          {
+            'src': 'statics/icons/icon-96x96.png',
+            'sizes': '96x96',
+            'type': 'image/png'
+          },
+          {
+            'src': 'statics/icons/app-logo-128x128.png',
             'sizes': '128x128',
+            'type': 'image/png'
+          },
+          {
+            'src': 'statics/icons/icon-144x144.png',
+            'sizes': '144x144',
+            'type': 'image/png'
+          },
+          {
+            'src': 'statics/icons/icon-152x152.png',
+            'sizes': '152x152',
             'type': 'image/png'
           },
           {
             'src': 'statics/icons/icon-192x192.png',
             'sizes': '192x192',
-            'type': 'image/png'
-          },
-          {
-            'src': 'statics/icons/icon-256x256.png',
-            'sizes': '256x256',
             'type': 'image/png'
           },
           {
