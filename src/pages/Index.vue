@@ -31,7 +31,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <span>{{previsao.result.dt_log_hora}}:00 as {{parseInt(previsao.result.dt_log_hora) + 1}}:00 hrs </span>
+            <span>{{previsao.result.dt_log_hora}}:00 às {{parseInt(previsao.result.dt_log_hora) + 1}}:00 hrs </span>
           </div>
           <div class="col">
             <span v-if="previsao.result.previsao_hora.chuva">Chuva {{parseFloat(previsao.result.previsao_hora.precipitacao).toFixed(2)}} mm</span>
